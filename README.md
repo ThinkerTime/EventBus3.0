@@ -11,12 +11,17 @@ compile 'de.greenrobot:eventbus:3.0.0-beta1'
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    
     setContentView(R.layout.activity_main);
+    
     mHello_tv = (TextView) findViewById(R.id.tv_hello);
-    EventBus.getDefault().register(this);
+    
+    EventBus.getDefault().register(this);    
 }
+
 2.2）在ondestory注销
 @Override
+
 protected void onDestroy() {
     super.onDestroy();
     EventBus.getDefault().unregister(this);

@@ -1,9 +1,13 @@
 # EventBus3.0
 EventBus3.0简单使用，没有理论只上代码
+
 1、添加依赖包，在项目的build.gradle
 compile 'de.greenrobot:eventbus:3.0.0-beta1'
+
 2、注册EventBus
+
     2.1)在ouncreate()里注册
+    
 @Override
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
